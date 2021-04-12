@@ -13,7 +13,7 @@ namespace ChatBot
             _botProcessor = botProcessor;
         }
         
-        //[HttpPost("/webhook")]
+        //[HttpPost("webhook")]
         public async Task HandleChatActivity(/*[FromBody]*/Update update)
         {
             await _botProcessor.Handle(update);
